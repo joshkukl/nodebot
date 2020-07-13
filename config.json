@@ -1,0 +1,8 @@
+{
+    "channels": [
+        {
+            "name": "full",
+            "product_ids": ["BTC-USD"]
+        }
+    ]
+}

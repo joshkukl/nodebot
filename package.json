@@ -1,0 +1,29 @@
+{
+    "name": "nodebot",
+    "description": "",
+    "authors": "joshkukl",
+    "version": "1.0.0",
+    "main": "main.js",
+    "private": false,
+    "license": "MIT",
+    "gypfile": true,
+    "engines": {
+        "node": "14.x.x"
+    },
+    "dependencies": {
+        "bindings": "^1.5.0",
+        "cmake-js": "^6.1.0",
+        "coinbase-pro-node": "^2.5.0",
+        "dotenv": "8.2.0",
+        "node-addon-api": "^3.0.0"
+    },
+    "scripts": {
+        "start": "node src/main.js",
+        "compile book": "cd src; tsc book/*.ts ; cd ..",
+        "rebuild addon": "cd addon ; cmake-js rebuild ; cd ..",
+        "install addon": "cd addon ; cmake-js install ; cd ..",
+        "reconfigure addon": "cd addon ; cmake-js reconfigure ; cd ..",
+        "compile addon": "cd addon ; cmake-js compile ; cd ..",
+        "start addon": "cd addon ; node addon.js ; cd .."
+    }
+}
